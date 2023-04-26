@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+  <style>
+    img{
+      width: 100%;
+    }
+    .logo-slider .item{
+      border:1px solid #111;
+
+    }
+    .logo-slider .slick-slide{
+      margin: 15px;
+    }
+    .my-container{
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    .slick-dots li.slick-active button:before{
+      color:#ff5722;
+    }
+    .slick-dots li button:before{
+      font-size: 12px;
+
+    }
+    .slick-next:before, .slick-prev:before{
+      color:#ff8159;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="my-container">
+
+  
+  <div class="logo-slider">
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNIhXblYJi2A0UUkijoRbYnwrJmwm63zJ1lg&usqp=CAU" alt=""/></div>
+    
+  </div>
+ </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+  /*$('.logo-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    
+    infinite: true
+  });*/$('.logo-slider').slick({
+  dots: false,
+  infinite: true,
+  speed:2000,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+				
+
+  </script>
+</body>
+</html>
